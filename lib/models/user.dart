@@ -5,9 +5,9 @@ class User {
   final String occupation;
   final String bio;
   final int? v;
-  final String avatar;  // New field
-  final String username; // New field
-  final String gender;   // New field
+  final String avatar;  
+  final String username; 
+  final String gender;   
 
   User({
     required this.id,
