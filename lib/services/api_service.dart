@@ -6,7 +6,6 @@ class ApiService {
   static const String baseUrl =
       "https://frontend-interview.touchinspiration.net/api/users";
 
-  // Fetch users from API
   Future<List<User>> fetchUsers() async {
     final response = await http.get(Uri.parse(baseUrl));
 
@@ -18,7 +17,6 @@ class ApiService {
     }
   }
 
-  // Update user details
   Future<User> updateUser(String id, Map<String, dynamic> updatedData) async {
     final response = await http.put(
       Uri.parse("$baseUrl/$id"),

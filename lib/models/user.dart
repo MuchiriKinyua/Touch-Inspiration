@@ -21,7 +21,6 @@ class User {
     required this.gender,
   });
 
-  // Convert JSON to User object
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
       id: json['_id'],
@@ -36,7 +35,6 @@ class User {
     );
   }
 
-  // Convert User object to JSON
   Map<String, dynamic> toJson() {
     return {
       '_id': id,

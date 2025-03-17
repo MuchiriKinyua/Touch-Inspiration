@@ -24,7 +24,6 @@ class UserProvider with ChangeNotifier {
     }
   }
 
-  // Update user
   Future<void> updateUser(String id, Map<String, dynamic> updatedData) async {
     try {
       User updatedUser = await _apiService.updateUser(id, updatedData);

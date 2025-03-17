@@ -46,7 +46,7 @@ class _EditUserScreenState extends State<EditUserScreen> {
           "email": _emailController.text,
           "occupation": _occupationController.text,
           "bio": _bioController.text,
-          "avatar": widget.user.avatar, // Keep existing avatar static
+          "avatar": widget.user.avatar,
         },
       );
 
